@@ -6,7 +6,7 @@
 Cherchant une solution efficace pour sauvegarder mes photos, je me lance dans ce petit projet afin de ne pas céder aux douces sirenes des GAFAM.
 
 Apres un rapide tour d'horizon des outils libre, mon choix se porte naturellement vers **Immich**.
-![image]([https://cdn.pixabay.com/photo/2016/03/31/19/39/device-1295187_960_720.png](https://immich.app/img/immich-logo-stacked-dark.svg))
+![image](https://immich.app/img/immich-logo-stacked-dark.svg)
 
 ## Mes objectifs 
 
