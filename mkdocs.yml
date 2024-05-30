@@ -91,6 +91,7 @@ extra:
 nav:
   - Préface: index.md
   - Initialisation du VPS:
+    - Provider: init/provider.md
     - Packages: init/pkg.md
     - User et SSH: init/ssh.md
     - Fail2ban: init/fail2ban.md
