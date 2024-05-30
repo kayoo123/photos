@@ -1,0 +1,105 @@
+site_name: Photos
+site_url: https://kayoo123.github.io/photos/
+site_author: Jérémi D.
+site_description: >-
+  Documentation pour l'installation, la configuration et l'utilisation
+  d'un service de stockage/partage de photos. A pour but educatif...
+repo_url: https://github.com/kayoo123/photos
+copyright: Copyright &copy; 2024 - Jérémi D.
+
+theme:
+  language: fr
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: dark mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: logo
+    repo: fontawesome/brands/github
+#  favicon: assets/favicon.png
+  features:
+    - navigation.footer
+    - navigation.instant
+    - navigation.tracking
+    #- navigation.tabs
+    #- navigation.tabs.sticky
+    #- navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+extra:
+  generator: false
+
+nav:
+  - Préface: index.md
+  - Initialisation du VPS:
+    - Packages: init/pkg.md
+    - User et SSH: init/ssh.md
+    - Fail2ban: init/fail2ban.md
+  - Docker - Gestion des services:
+    - Installation: docker/installation.md
+    - Start: docker/docker.md
+  - DNS: dns.md
+  - Backup et Restore: dump.md
+  - Annexe:
+    - Mkdocs: annexe/mkdocs.md
+    - me contacter: annexe/infos.md
+    
