@@ -15,12 +15,16 @@ Stocker en ligne une solution de stocakge de photos afin de :
 - avoir acces à mes photos partout dans le monde
 - partager avec mes contacts
 
-Le but ici c'est d'apprendre tout en s'amusant et en partageant avec vous :rocket:
 
 Ce qui sera au rendez-vous : 
 
 - [x] du [MKdocs](https://www.mkdocs.org/) et du [github workflow](https://docs.github.com/fr/actions/using-workflows)
 - [x] la configuration d'un VPS
 - [x] la gestion de composant sous docker et docker-compose
-- [ ] etc...
+- [x] comment obtenir un DNS
+- [x] Gerer nos sauvegardes
+- [ ] monter des volumes distants
+- [ ] Supervision et alerting
+- [ ] ...
 
+Le but ici c'est d'apprendre tout en s'amusant et en partageant avec vous :rocket:
