@@ -1,5 +1,5 @@
 ---
-name: website - https://photos.jeremi.fr.to
+name: Website - Immich
 on:
   schedule:
     - cron: '*/30 * * * *'
