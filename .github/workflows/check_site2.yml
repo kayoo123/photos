@@ -1,4 +1,5 @@
-name: Status - https://kayoo123.github.io/photos
+---
+name: Documentation
 
 on:
   schedule:
