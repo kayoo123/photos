@@ -1,0 +1,24 @@
+name: Check Site 2 Availability
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  push:
+    branches:
+      - main
+
+jobs:
+  check-availability:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check Site 2 Availability
+      run: |
+        URL="https://kayoo123.github.io/photos/"
+        STATUS_CODE=$(curl -o /dev/null -s -w "%{http_code}\n" $URL)
+        if [ "$STATUS_CODE" -ne 200 ]; then
+          echo "Site 2 is down. Status code: $STATUS_CODE"
+          exit 1
+        else
+          echo "Site 2 is up. Status code: $STATUS_CODE"
+        fi
