@@ -1,5 +1,5 @@
 ---
-name: Status - https://photos.jeremi.fr.to
+name: website - https://photos.jeremi.fr.to
 on:
   schedule:
     - cron: '*/30 * * * *'
