@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check Site 2 Availability
+    - name: Check - kayoo123.github.io/photos
       run: |
         URL="https://kayoo123.github.io/photos/"
         STATUS_CODE=$(curl -o /dev/null -s -w "%{http_code}\n" $URL)
