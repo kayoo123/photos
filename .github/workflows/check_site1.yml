@@ -1,6 +1,5 @@
 ---
-name: Check Site 1 Availability
-
+name: Status - https://photos.jeremi.fr.to
 on:
   schedule:
     - cron: '*/30 * * * *'
@@ -13,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check - photos.jeremi.fr.to
+    - name: Check
       run: |
         URL="https://photos.jeremi.fr.to"
         STATUS_CODE=$(curl -o /dev/null -s -w "%{http_code}\n" $URL)
