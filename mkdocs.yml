@@ -90,16 +90,19 @@ extra:
 
 nav:
   - Préface: index.md
-  - Initialisation du VPS:
-    - Provider: init/provider.md
-    - Packages: init/pkg.md
-    - User et SSH: init/ssh.md
-    - Fail2ban: init/fail2ban.md
+  - VPS - Initialisation:
+    - Quel fournisseur choisir: init/provider.md
+    - et quoi installer dessus: init/pkg.md
+    - Gestion des utilisateurs et des connexions: init/ssh.md
+    - Hardening (Fail2ban): init/fail2ban.md
+  - DNS - Gestion de son domaine: dns.md
   - Docker - Gestion des services:
     - Installation: docker/installation.md
     - Start: docker/docker.md
-  - DNS: dns.md
-  - Backup et Restore: dump.md
+  - Immich - Parametrage:
+    - Premiere connexion: immich/init.md
+    - Application sur telephone: immich/android.md
+    - Backup et Restore: immich/dump.md
   - Annexe:
     - Mkdocs: annexe/mkdocs.md
     - me contacter: annexe/infos.md
