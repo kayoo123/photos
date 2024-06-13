@@ -92,7 +92,7 @@ nav:
   - Préface: index.md
   - VPS - Initialisation:
     - Quel fournisseur choisir: init/provider.md
-    - et quoi installer dessus: init/pkg.md
+    - Que faut-il installer: init/pkg.md
     - Gestion des utilisateurs et des connexions: init/ssh.md
     - Hardening (Fail2ban): init/fail2ban.md
   - DNS - Gestion de son domaine: dns.md
